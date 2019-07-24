@@ -1,0 +1,68 @@
+// increasing specifity: avoids using important to override bootstrap styling :)
+body .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: none;
+    border-radius: .35rem;
+    text-transform: capitalize;
+    transform-style: flat;
+    transition: all 500ms ease-out;
+    padding: 1em 1.5em;
+    @include viewport(small) {
+        padding: 6px 12px;
+    }
+    &:active,
+    &:focus,
+    &:hover,
+    &.btn-default:active,
+    &.btn-default:active:focus,
+    &.btn-default:active:hover {
+        border: none !important;
+        transform-style: flat;
+        transition: all 250ms ease-out;
+    }
+}   
+.light-btn {
+    background: $light_blue;
+    color: $white;
+    border: 1px solid;
+    &:active,
+    &:focus,
+    &:hover,
+    &.btn-default:active,
+    &.btn-default:active:focus,
+    &.btn-default:active:hover {
+        background: $lightblue_hov;
+        border: 1px solid $lightblue_hov;        
+        color: $white;  
+        box-shadow: 0 10px 20px -8px rgba(31, 31, 31, 0.7);     
+    } 
+}
+.trans-btn {
+    background: transparent;
+    &:active,
+    &:focus,
+    &:hover,
+    &.btn-default:active,
+    &.btn-default:active:focus,
+    &.btn-default:active:hover {
+        background: transparent;
+        border: 1px solid transparent !important;
+    }
+}
+.orange-btn {
+    color: $white;
+    background-color: $orange;
+    &:active,
+    &:focus,
+    &:hover,
+    &.btn-default:active,
+    &.btn-default:active:focus,
+    &.btn-default:active:hover
+    &.btn-default.disabled.focus, &.btn-default.disabled:focus, &.btn-default.disabled:hover, &.btn-default[disabled].focus, &.btn-default[disabled]:focus, &.btn-default[disabled]:hover, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
+        color: $white;
+        background-color: $orange;
+    }
+}

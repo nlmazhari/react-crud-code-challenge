@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Radikal-Light';
+    src: url("/assets/fonts/radikal_light.eot");
+    src: url("/assets/fonts/radikal_light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/radikal_light.woff") format("woff"), url("/assets/fonts/radikal_light.ttf") format("truetype"), url("/assets/fonts/radikal_light.otf") format("otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Radikal-Regular';
+    src: url("/assets/fonts/radikal_regular.eot");
+    src: url("/assets/fonts/radikal_regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/radikal_regular.woff") format("woff"), url("/assets/fonts/radikal_regular.ttf") format("truetype"), url("/assets/fonts/radikal_regular.otf") format("otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Radikal-Bold';
+    src: url("/assets/fonts/radikal_bold.eot");
+    src: url("/assets/fonts/radikal_bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/radikal_bold.woff") format("woff"), url("/assets/fonts/radikal_bold.ttf") format("truetype"), url("/assets/fonts/radikal_bold.otf") format("otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+$light: 'Radikal-Light',
+sans-serif;
+$regular: 'Radikal-Regular',
+sans-serif;
+$bold: 'Radikal-Bold',
+sans-serif;
+$h1-font-sizes: ( null: (50px),
+tiny: 55px,
+medium: (58px),
+large: (65px),
+extra: 68px,
+);
+$h2-font-sizes: ( null: (40px),
+tiny: 42px,
+medium: (48px),
+large: (55px),
+extra: 58px,
+);
+$h3-font-sizes: ( null: (28px,
+1.1),
+tiny: 28px,
+medium: (33px),
+);
+$h4-font-sizes: ( null: (20px,
+1.2),
+medium: (25px),
+);
+$h5-font-sizes: ( null: (18px,
+1.2),
+medium: (20px,
+1.2),
+);
+$h6-font-sizes: ( null: (15px,
+1.2),
+medium: (16px,
+1.2),
+);
+h1,
+.h1 {
+    @include font-size($h1-font-sizes);
+}
+
+h2,
+.h2 {
+    @include font-size($h2-font-sizes);
+}
+
+h3,
+.h3 {
+    @include font-size($h3-font-sizes);
+}
+
+h4,
+.h4 {
+    @include font-size($h4-font-sizes);
+}
+
+h5,
+.h5 {
+    @include font-size($h5-font-sizes);
+}
+
+h6,
+.h6 {
+    @include font-size($h6-font-sizes);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    margin: 0;
+}

@@ -1,0 +1,26 @@
+.name-section {
+    @extend .white-box;
+    @extend .img-cover;
+    min-height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .flex-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 1em;
+        @include viewport(small) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    .title {
+        color: aliceblue;
+    }
+}
+.create-new {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

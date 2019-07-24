@@ -1,0 +1,14 @@
+@import 'helpers/colors';
+@import 'helpers/mixins';
+
+@import 'base/typography';
+@import '/bootstrap/dist/css/bootstrap.min.css';
+@import 'base/reset';
+@import 'helpers/general';
+
+@import 'layout/buttons';
+@import 'layout/pagination';
+
+@import 'pages/dinoList.scss';
+@import 'pages/dinoName.scss';
+@import 'pages/dinoWeights.scss';

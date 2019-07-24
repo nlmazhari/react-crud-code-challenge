@@ -1,0 +1,16 @@
+.mainbar {
+    display: inline-block;
+    width: 100%;
+    min-height: calc(100vh - 200px);
+    overflow: hidden;
+    overflow-y: auto;
+    margin-top: 100px;    
+    float: right;
+    @include viewport(small) {
+        width: calc(100% - 200px);
+        margin-top: 200px;
+    }
+    @include viewport(large) {
+        width: calc(100% - 300px);
+    }    
+}

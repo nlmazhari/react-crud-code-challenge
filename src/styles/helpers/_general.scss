@@ -1,0 +1,41 @@
+.container {
+    max-width: 1300px;
+    padding: 20px;
+    @include viewport(small) {
+        width: 100%;
+        margin: auto;
+        padding: 40px;  
+    }
+}
+
+body .img-cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.white-box {
+    padding: 1em;
+    background: $white;
+}
+
+.btn + .btn {
+    @include viewport(small) {
+        margin-left: 1em;
+    }
+}
+
+.btn-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @include viewport(small) {
+        justify-content: flex-end;
+    }
+}
+
+.title {
+    font-size: 2em;
+    text-transform: capitalize;
+}
